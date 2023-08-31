@@ -1,9 +1,2 @@
 #!/bin/bash
-
-# Iterate through all subdirectories
-for dir in */; do
-    # Check if the entry is a directory
-    if [ -d "$dir" ]; then
-        chmod ugo+x "$dir"
-    fi
-done
+chmod -R +X .
